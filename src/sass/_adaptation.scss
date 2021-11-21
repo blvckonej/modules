@@ -1,0 +1,37 @@
+@media (max-width: 991px) {
+    .promo {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .consultation {        
+        text-align: center;            
+    }
+    .feed-form {
+        display: flex;        
+        justify-content: center;
+    }  
+}
+
+@media (max-width: 576px) {
+    .advantages {
+        min-height: 473px;
+        background-color: #F6F6F6 ;
+        &__block{
+            display: flex;
+            flex-direction: column;
+        }
+        &__wrapp {            
+            width: 450px;            
+        }
+        &__subtitle {            
+            font-size: 28px;
+        }
+        &__descr {            
+            font-size: 20px;            
+            line-height: 23px;            
+        }
+    }
+}

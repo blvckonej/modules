@@ -1,0 +1,208 @@
+* {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.promo {
+    min-height: 650px;
+    padding: 21px 0 93px 0;
+    background: url(../../src/img/bg.png) center (center/cover) no-repeat;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 91px;
+    }
+    &__header {
+        color: #fff;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+    &__subheader {
+        margin-top: 17px;
+        font-size: 24.3px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    &__icons {
+        margin-top: 65px;
+        width: 425px;       
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icon {
+        width: 106px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+    &__link {
+        margin-top: 18px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;   
+        a {
+            text-decoration: none;
+            color: #fff;
+        }     
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    &__logo {
+        width: 250px;
+        img {
+            width: 100%;
+        }
+    }
+    &__official {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+        span {
+            font-style: 18px;
+            display: block;
+        }
+    }
+    &__phone {
+        display: block;
+        font-style: 18px;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+        margin-bottom: 4px;
+    }
+}
+
+.advantages {
+    min-height: 473px;
+    padding: 70px 0 65px 0;
+    background-color: #F6F6F6;
+    margin: 0;
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        color: black;        
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__wrapp {
+        margin-top: 60px;
+        width: 269px;
+        text-align: center;
+    }
+    &__subtitle {
+        margin-top: 35px;
+        font-size: 18px;
+        color: black;
+        font-weight: 700;
+    }
+    &__descr {
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 18px;
+        color: black;
+    }
+}
+
+.consultation {
+    min-height: 680px;
+    padding: 100px 0 92px 0;
+    background: url(../img/bgconst.png)center (center/cover) no-repeat;
+    &__title {
+        color: #fff;
+        font-size: 36px;
+        font-weight: 700;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    &__descr {
+        margin-top: 8px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
+
+
+.button {
+    color: #fff;
+    font-weight: 100;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: #c70101;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+    &_main {
+        margin-top: 79px;
+        width: 300px;
+        height: 50px;
+        background-repeat: 5px;
+        background-color: #c70101;
+        border: none;
+        font-size: 16px;        
+    }
+}
+
+.feed-form {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    width: 399px;
+    input {
+        height: 50px;
+        border-radius: 5px;
+        background-color: #fff;
+        margin-bottom: 15px;
+        border: none;
+        padding: 0 20px;
+        font-size: 14px;
+        font-weight: 300;
+        &:nth-child(3) {
+            margin-bottom: 20;
+        }
+    }
+    .button {
+        margin-top: 0;
+        width: 399px;
+    }    
+}
+
+@import "_adaptation.scss";
+
