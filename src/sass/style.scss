@@ -1,3 +1,5 @@
+@import "_adaptation.scss";
+@import 'animate.css';
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
     box-sizing: border-box;
@@ -151,6 +153,14 @@ h3 {
         font-weight: 300;
         line-height: 18px;
         color: black;
+    }
+    &__icon {
+        &_animated {
+            animation: heartbeat 1.5s  ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
     }
 }
 
@@ -641,7 +651,21 @@ h3 {
     }
 }
 
+.pageup {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    img {
+        width: 100%;
+
+    }
+}
+
 #consultation, #order, #thanks {
     display: none;
 }
-@import "_adaptation.scss";
+
+@import "_animations.scss";
